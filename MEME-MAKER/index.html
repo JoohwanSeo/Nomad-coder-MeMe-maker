@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Meme Maker</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="color-options">
+    <input type="color" id="color" />
+    <div class="color-option" style="background-color: #e17055;" data-color="#e17055">
+    </div>
+    <div class="color-option" style="background-color: #55efc4;" data-color="#55efc4">
+    </div>
+    <div class="color-option" style="background-color: #81ecec;" data-color="#81ecec">
+    </div>
+    <div class="color-option" style="background-color: #0984e3;" data-color="#0984e3">
+    </div>
+    <div class="color-option" style="background-color: #6c5ce7;" data-color="#6c5ce7">
+    </div>
+    <div class="color-option" style="background-color: #e84393;" data-color="#e84393">
+    </div>
+    <div class="color-option" style="background-color: #d63031;" data-color="#d63031">
+    </div>
+    <div class="color-option" style="background-color: #636e72;" data-color="#636e72">
+    </div>
+    <div class="color-option" style="background-color: #130f40;" data-color="#130f40">
+    </div>
+  </div>
+  <canvas></canvas>
+  <div class="btns">
+    <input id="line-width" type="range" min="1" max="10" value="5" step="0.5"/>
+  <!-- 굵기 조절 이펙트 삽입 최소,최대,평균값,단계 조절 -->
+  
+  <button id="mode-btn">Fill</button>
+  <button id="destroy-btn">Destroy</button>
+  <button id="eraser-btn">Erase</button>
+  <label for="file">Add Photo<input type="file" accept="image/*" id="file"/></label>
+  <input type="text" placeholder="Add Text Here!" id="text"/>
+  <button id='save'>Save image</button>
+  </div>
+  <script src="app.js"></script>
+</body>
+
+</html>
